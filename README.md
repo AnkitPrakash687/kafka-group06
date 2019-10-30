@@ -1,4 +1,4 @@
-# kafka-group06
+# Kafka-group06
 
 ## Introduction
 Twitter provide the free stream data for various business analytics. In this project we will stream the twitter data using Apache Kafka which is a streaming platform. These data can be useful for creating trending topics in the various fields. 
@@ -70,4 +70,6 @@ ic linkin
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic linkin --from-beginning
 ```
 
+## References
+https://www.bmc.com/blogs/working-streaming-twitter-data-using-kafka/
 
