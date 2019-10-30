@@ -1,8 +1,9 @@
 # kafka-group06
 
 ## Introduction
-Twitter provide the free stream data for various business analytics. In this project we will stream the twitter data using Apache Kafka which is a streaming platform. These data can be useful for creating trending topics in the various fields.  
-We will be setting up a twitter
+Twitter provide the free stream data for various business analytics. In this project we will stream the twitter data using Apache Kafka which is a streaming platform. These data can be useful for creating trending topics in the various fields. 
+
+We will be setting up a kafka twitter stream using python libraries
 
 ## Prerequisites
 
@@ -19,11 +20,21 @@ We assume that:
     ```
     pip install kafka-python
     pip install python-twitter
-    pip install tweepy
-    
+    pip install tweepy   
     ```
 3. Start Zookeeper and Kafka.
+
+```
+./zkServer.cmd
+./kafka-server-start.bat .\server.properties
+```
+
 4. Create a topic.Example: "linkin park" or "Climate Change"
+```
+./kafka-topics.bat --zookeeper localhost:2181 --create  --replication-factor 1 --partitions 1 --top
+ic linkin
+```
+
 5. Copy the below code. Replace the variable code with your twitter keys:
 
 ```
@@ -55,4 +66,8 @@ We assume that:
 ```
 6. Run the above python code.
 7. You can test that topics are getting published in Kafka by using
+```
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic linkin --from-beginning
+```
+
 
