@@ -1,6 +1,8 @@
 # kafka-group06
 
 ## Introduction
+Twitter provide the free stream data for various business analytics. In this project we will stream the twitter data using Apache Kafka which is a streaming platform. These data can be useful for creating trending topics in the various fields.  
+We will be setting up a twitter
 
 ## Prerequisites
 
@@ -8,6 +10,7 @@ We assume that:
 * you have python installed and have a basic knowledge how it looks like.
 * you are aware how to run zookeeper server.
 * you are aware how to run kafka server.
+* you have twitter developer account. (If you don't have the developer account, [click here to know more](https://docs.inboundnow.com/guide/create-twitter-application/))
 
 ## Steps to follow:
 
