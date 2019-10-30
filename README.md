@@ -22,7 +22,7 @@ We assume that:
     pip install tweepy
     
     ```
-3. Start Zooper and Kafka
+3. Start Zookeeper and Kafka.
 4. Create a topic.Example: "linkin park" or "Climate Change"
 5. Copy the below code. Replace the variable code with your twitter keys:
 
